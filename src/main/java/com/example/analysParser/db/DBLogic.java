@@ -28,11 +28,11 @@ public class DBLogic {
     @Bean
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        dataSource.setUrl("jdbc:sqlserver://192.168.7.100;database=izhevsk; " +
+        dataSource.setDriverClassName("");
+        dataSource.setUrl("" +
                 "encrypt=true;TrustServerCertificate=true;");
-        dataSource.setUsername("sa");
-        dataSource.setPassword("medik17@");
+        dataSource.setUsername("");
+        dataSource.setPassword("");
         return dataSource;
     }
     public Connection getConnection() throws SQLException {
